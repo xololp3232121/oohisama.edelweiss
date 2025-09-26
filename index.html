@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPO法人イノセント おひさまファーム（就労継続支援Ｂ型）エーデルワイス（共同生活援助）  | <br>ここから始まる<br>あなただけの物語。</title>
+    <meta name="google-site-verification" content="_Cri0RoK2_35-KaL229eLChgkgo1g_GB-cd6Ta8yI6o" />
+    <meta name="description"
+        content="大分市の「おひさまファーム」で働く自信を育み、「エーデルワイス」で穏やかな毎日を。NPO法人イノセントは、あなたの「働きたい」「暮らしたい」という想いに、全力で寄り添います。">
+    <meta name="keywords"
+        content="NPO法人イノセント, 障がい福祉サービス, 大分市, 就労継続支援B型, おひさまファーム, グループホーム, 共同生活援助, エーデルワイス, 障がい者支援, 自立支援">
+
+    <link rel="canonical" href="https://example.com/">
+    <meta property="og:title" content="NPO法人イノセント | ここから始まる、あなただけの物語。">
+    <meta property="og:description"
+        content="大分市の「おひさまファーム」で働く自信を育み、「エーデルワイス」で穏やかな毎日を。あなたの「働きたい」「暮らしたい」という想いに、全力で寄り添います。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://example.com/ogp_image.png">
+    <meta property="og:site_name" content="特定非営利活動法人イノセント">
+    <meta property="og:locale" content="ja_JP">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NPO法人イノセント | ここから始まる、あなただけの物語。">
+    <meta name="twitter:description"
+        content="大分市の「おひさまファーム」で働く自信を育み、「エーデルワイス」で穏やかな毎日を。あなたの「働きたい」「暮らしたい」という想いに、全力で寄り添います。">
+    <meta name="twitter:image" content="https://example.com/twitter_card_image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "特定非営利活動法人イノセント",
+        "description": "大分市を拠点に、障がいのある方々の「働く」と「暮らす」を支える特定非営利活動法人です。就労継続支援B型事業所「おひさまファーム」と、共同生活援助グループホーム「エーデルワイス」を運営しています。",
+        "url": "https://example.com/",
+        "logo": "https://example.com/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "大分市",
+            "addressRegion": "大分県",
+            "addressCountry": "JP"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+81-97-538-2211",
+            "contactType": "customer support",
+            "areaServed": "JP",
+            "availableLanguage": "Japanese"
+        },
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "就労継続支援B型 (おひさまファーム)",
+                    "description": "自分のペースで軽作業に取り組み、働く自信とスキルを育む場所です。無料の送迎や温かい手作り昼食もご用意しています。"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "共同生活援助 グループホーム (エーデルワイス)",
+                    "description": "家庭的で温かい雰囲気のグループホームで、安心できる毎日を。スタッフが常駐し、自立した暮らしをサポートします。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hamburger {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            transition: all 0.25s;
+            position: relative;
+        }
+
+        .hamburger-top,
+        .hamburger-middle,
+        .hamburger-bottom {
+            position: absolute;
+            width: 24px;
+            height: 3px;
+            background-color: #333;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        .hamburger-middle {
+            transform: translateY(8px);
+        }
+
+        .hamburger-bottom {
+            transform: translateY(16px);
+        }
+
+        .open .hamburger-top {
+            transform: rotate(45deg) translateY(6px) translateX(6px);
+        }
+
+        .open .hamburger-middle {
+            opacity: 0;
+        }
+
+        .open .hamburger-bottom {
+            transform: rotate(-45deg) translateY(-6px) translateX(6px);
+        }
+
+        #mobile-menu {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #mobile-menu>div {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        #shape {
+            transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            overflow: hidden;
+            filter: drop-shadow(0 0 1.5rem rgba(100, 100, 100, 0.2));
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            position: relative;
+        }
+
+        #shape-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 1.5rem;
+        }
+
+        #shape-text {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            font-size: 1.75rem;
+        }
+
+        @media (min-width: 768px) {
+            #shape-text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="メインナビゲーション">
+            <div class="flex flex-col items-start">
+
+                <a href="#about"
+                    class="text-base font-bold text-green-700 hover:text-green-600 transition-colors duration-300">
+                    NPO法人イノセント
+                </a>
+
+                <a href="#farm"
+                    class="-mt-2 flex items-baseline text-sm text-gray-600 hover:text-green-600 transition-colors duration-300 ml-4">
+                    おひさまファーム
+                    <span class="text-xs ml-1 text-gray-500">(就労継続支援B型)</span>
+                </a>
+
+                <a href="#edelweiss"
+                    class="-mt-2 flex items-baseline text-sm text-gray-600 hover:text-green-600 transition-colors duration-300 ml-4">
+                    エーデルワイス
+                    <span class="text-xs ml-1 text-gray-500">(共同生活援助)</span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about"
+                    class="flex flex-col items-center text-gray-600 hover:text-green-600 transition-colors duration-300"><i
+                        class="fas fa-building text-2xl" aria-hidden="true"></i><span
+                        class="text-xs mt-1">法人について</span></a>
+                <a href="#appsheet-news"
+                    class="flex flex-col items-center text-gray-600 hover:text-green-600 transition-colors duration-300"><i
+                        class="fas fa-bullhorn text-2xl" aria-hidden="true"></i><span
+                        class="text-xs mt-1">お知らせ</span></a>
+                <a href="#farm"
+                    class="flex flex-col items-center text-gray-600 hover:text-green-600 transition-colors duration-300"><i
+                        class="fas fa-sun text-2xl" aria-hidden="true"></i><span
+                        class="text-xs mt-1">おひさまファーム</span></a>
+                <a href="#edelweiss"
+                    class="flex flex-col items-center text-gray-600 hover:text-green-600 transition-colors duration-300"><i
+                        class="fas fa-home text-2xl" aria-hidden="true"></i><span
+                        class="text-xs mt-1">エーデルワイス</span></a>
+                <a href="#flow"
+                    class="flex flex-col items-center text-gray-600 hover:text-green-600 transition-colors duration-300"><i
+                        class="fas fa-shoe-prints text-2xl" aria-hidden="true"></i><span
+                        class="text-xs mt-1">ご利用の流れ</span></a>
+                <a href="#contact"
+                    class="flex flex-col items-center text-gray-600 hover:text-green-600 transition-colors duration-300"><i
+                        class="fas fa-envelope text-2xl" aria-hidden="true"></i><span
+                        class="text-xs mt-1">お問い合わせ</span></a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="hamburger z-50 focus:outline-none" aria-expanded="false"
+                    aria-controls="mobile-menu" aria-label="メニューを開閉">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="fixed inset-0 z-40 bg-black bg-opacity-50 opacity-0 pointer-events-none"
+            role="dialog" aria-modal="true">
+            <div class="w-64 max-w-full h-full bg-white ml-auto p-8 shadow-lg transform translate-x-full">
+                <nav class="flex flex-col space-y-6 text-lg pt-12">
+                    <a href="#about" class="text-gray-700 hover:text-green-600 mobile-menu-link">法人について</a>
+                    <a href="#appsheet-news" class="text-gray-700 hover:text-green-600 mobile-menu-link">お知らせ</a>
+                    <a href="#farm" class="text-gray-700 hover:text-green-600 mobile-menu-link">おひさまファーム</a>
+                    <a href="#edelweiss" class="text-gray-700 hover:text-green-600 mobile-menu-link">エーデルワイス</a>
+                    <a href="#flow" class="text-gray-700 hover:text-green-600 mobile-menu-link">ご利用の流れ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 mobile-menu-link">お問い合わせ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16 md:py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-left reveal">
+                        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight mb-6"
+                            style="font-weight: 900;">
+                            ここから始まる<br class="hidden md:block">
+                            <span class="text-green-700">あなただけ</span>の物語
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-600 max-w-lg mb-8">
+                            大分市の「<span class="font-bold text-green-700">おひさまファーム</span>」（就労継続支援B型）で働く自信を育み<br>
+                            「<span class="font-bold text-green-700">エーデルワイス</span>」（共同生活援助）で穏やかな毎日を。<br>
+                            NPO法人イノセントは、あなたの「働きたい」「暮らしたい」という想いに、全力で寄り添います。
+                        </p>
+                        <a href="#about"
+                            class="inline-block bg-green-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-green-700 transition-transform transform hover:scale-105 shadow-lg text-lg">私たちの活動を知る</a>
+                    </div>
+                    <div class="reveal relative flex flex-col items-center justify-center">
+                        <div class="w-full max-w-xs sm:max-w-sm">
+                            <div id="shape" class="select-none text-center shadow-2xl">
+                                <div id="shape-content">
+                                    <i id="shape-icon" class="fas" aria-hidden="true"></i>
+                                    <span id="shape-text" class="font-bold text-white block"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <div class="reveal">
+                    <h2 class="text-3xl font-bold text-green-700 mb-6">NPO法人イノセントについて</h2>
+                    <p class="max-w-3xl mx-auto mb-12">
+                        私たちは、障がいのある方一人ひとりが、地域社会で自分らしく生き生きと暮らせるよう応援する団体です。あなたの新しい一歩をサポートします。
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center mb-20 reveal">
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-hands-helping text-5xl text-green-500 mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-2">私たちの理念</h3>
+                        <p>一人ひとりの個性と「やってみたい」を大切に。あなたの可能性を信じ、共に成長する支援を目指します。</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-seedling text-5xl text-green-500 mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-2">事業内容</h3>
+                        <p>「働く（就労支援）」と「暮らす（生活支援）」を軸に、日中の活動から住まいまで、毎日をトータルで支えます。</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-map-marker-alt text-5xl text-green-500 mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-2">活動拠点</h3>
+                        <p>大分県大分市</p>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-8">私たちのサポート体制</h3>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                        <div
+                            class="text-center p-6 bg-green-100 rounded-full w-48 h-48 flex flex-col justify-center shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                            <i class="fas fa-briefcase text-4xl text-green-600 mb-2" aria-hidden="true"></i>
+                            <h4 class="text-xl font-bold text-green-800">就労支援</h4>
+                            <p class="text-sm">おひさまファーム</p>
+                        </div>
+                        <div class="text-5xl text-gray-400 mx-4 hidden md:block" aria-hidden="true">↔</div>
+                        <div class="text-5xl text-gray-400 my-4 md:hidden" aria-hidden="true">↑↓</div>
+                        <div
+                            class="text-center p-6 bg-blue-100 rounded-full w-48 h-48 flex flex-col justify-center shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                            <i class="fas fa-home text-4xl text-blue-600 mb-2" aria-hidden="true"></i>
+                            <h4 class="text-xl font-bold text-blue-800">生活支援</h4>
+                            <p class="text-sm">エーデルワイス</p>
+                        </div>
+                    </div>
+                    <p class="max-w-2xl mx-auto mt-8 text-lg">「働くこと」と「暮らすこと」を一体的にサポートし、<br>一人ひとりの自立した生活を力強く支えます。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="appsheet-news" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-green-700 mb-4">お知らせ</h2>
+                    <p class="max-w-3xl mx-auto">私たちの活動やイベント情報など、最新のニュースをお届けします。</p>
+                </div>
+                <div class="text-center">
+                    <a href="https://www.appsheet.com/start/53e902b5-c2fa-45ec-b0e9-d09d41254293" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-block bg-green-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-green-700 transition-transform transform hover:scale-105 shadow-lg text-lg">
+                        最新のお知らせをアプリで見る
+                        <i class="fas fa-external-link-alt text-sm ml-2" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="farm" class="py-16 md:py-24 bg-green-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl font-bold text-green-800 mb-4">おひさまファーム (就労継続支援B型)</h2>
+                    <p class="text-lg">「働く」よろこびを、ここで。</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-16 reveal">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">活動内容</h3>
+                        <p class="mb-6">
+                            ヒューズ管作成や自動車部品加工など、集中できる軽作業を行います。自分のペースで「できた！」を重ね、働く自信とスキルを育みましょう。
+                        </p>
+                        <ul class="space-y-4 mb-6">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-600 mr-3 mt-1"
+                                    aria-hidden="true"></i><span><strong>個別サポート:</strong>
+                                    あなたの得意なことや目標に合わせ、丁寧にサポートします。</span>
+                            </li>
+                            <li class="flex items-start"><i class="fas fa-bus text-green-600 mr-3 mt-1"
+                                    aria-hidden="true"></i><span><strong>無料送迎:</strong>
+                                    ご自宅近くまで送迎あり。毎日安心して通えます（大分市内）。</span></li>
+                            <li class="flex items-start"><i class="fas fa-utensils text-green-600 mr-3 mt-1"
+                                    aria-hidden="true"></i><span><strong>手作り昼食:</strong>
+                                    栄養満点の温かい昼食を無料でご用意。みんなで食べるごはんは美味しいですよ。</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3 text-center">活動の様子</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                <img src="oohisama1.png" alt="おひさまファーム施設の外観"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                            <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                <img src="oohisama2.png" alt="利用者が集中して軽作業に取り組む様子"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                            <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                <img src="oohisama3.png" alt="スタッフが丁寧に作業をサポートする風景"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                            <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                <img src="oohisama1.4.png" alt="栄養バランスの取れた手作りの昼食"
+                                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-2xl font-bold text-center mb-10">おひさまファームでの1日</h3>
+                    <div class="relative max-w-4xl mx-auto">
+                        <div class="absolute left-1/2 h-full w-0.5 bg-green-300 -translate-x-1/2" aria-hidden="true">
+                        </div>
+                        <div
+                            class="flex items-center w-full mb-8 transition-all duration-300 hover:scale-105 cursor-pointer">
+                            <div class="w-1/2 pr-8 text-right">
+                                <p class="font-bold text-green-800">9:00</p>
+                                <p>送迎・朝の会</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center z-10 text-xl">
+                                <i class="fas fa-sun" aria-hidden="true"></i>
+                            </div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        <div
+                            class="flex items-center w-full mb-8 transition-all duration-300 hover:scale-105 cursor-pointer">
+                            <div class="w-1/2 pr-8"></div>
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center z-10 text-xl">
+                                <i class="fas fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <div class="w-1/2 pl-8">
+                                <p class="font-bold text-green-800">9:30 - 12:00</p>
+                                <p>午前の作業</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center w-full mb-8 transition-all duration-300 hover:scale-105 cursor-pointer">
+                            <div class="w-1/2 pr-8 text-right">
+                                <p class="font-bold text-green-800">12:00 - 12:50</p>
+                                <p>昼食・休憩</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center z-10 text-xl">
+                                <i class="fas fa-utensils" aria-hidden="true"></i>
+                            </div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        <div
+                            class="flex items-center w-full mb-8 transition-all duration-300 hover:scale-105 cursor-pointer">
+                            <div class="w-1/2 pr-8"></div>
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center z-10 text-xl">
+                                <i class="fas fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <div class="w-1/2 pl-8">
+                                <p class="font-bold text-green-800">12:50 - 15:30</p>
+                                <p>午後の作業</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center w-full transition-all duration-300 hover:scale-105 cursor-pointer">
+                            <div class="w-1/2 pr-8 text-right">
+                                <p class="font-bold text-green-800">15:30</p>
+                                <p>終礼・送迎</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center z-10 text-xl">
+                                <i class="fas fa-car" aria-hidden="true"></i>
+                            </div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-20 reveal grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 flex items-center"><i
+                                class="fas fa-map-marked-alt mr-3 text-green-600" aria-hidden="true"></i>アクセス</h3>
+                        <div class="relative" style="padding-bottom: 56.25%;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1668.2485248296275!2d131.56086499073444!3d33.25347741146294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a171a4bd689b%3A0xb75a4cd27edd3bd9!2z44GK44Gy44GV44G-44OV44Kh44O844Og!5e0!3m2!1sja!2sjp!4v1758793166521!5m2!1sja!2sjp"
+                                class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" style="border:0;"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="おひさまファームの地図"></iframe>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-2"
+                                aria-hidden="true"></i>住所: 大分市下白木10組
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 flex items-center">
+                            <i class="fab fa-youtube mr-3 text-red-600" aria-hidden="true"></i>施設紹介（動画）
+                        </h3>
+                        <div class="relative bg-gray-200 rounded-xl shadow-lg overflow-hidden"
+                            style="padding-bottom: 56.25%;">
+                            <iframe src="oohisama.mp4" class="absolute top-0 left-0 w-full h-full"
+                                title="おひさまファーム施設紹介動画" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="edelweiss" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl font-bold text-green-700 mb-4">グループホーム エーデルワイス (共同生活援助)</h2>
+                    <p class="text-lg">安心できる暮らしの場で、自立した毎日を。</p>
+                </div>
+                <div class="mb-8 reveal">
+                    <div class="flex justify-center border-b" role="tablist" aria-label="エーデルワイス施設一覧">
+                        <button role="tab" aria-selected="true" aria-controls="tab1" data-tab="tab1"
+                            class="tab-button py-4 px-6 block hover:text-green-600 focus:outline-none text-green-600 border-b-2 font-medium border-green-600">エーデルワイス1</button>
+                        <button role="tab" aria-selected="false" aria-controls="tab2" data-tab="tab2"
+                            class="tab-button py-4 px-6 block hover:text-green-600 focus:outline-none">エーデルワイス2</button>
+                        <button role="tab" aria-selected="false" aria-controls="tab3" data-tab="tab3"
+                            class="tab-button py-4 px-6 block hover:text-green-600 focus:outline-none">エーデルワイス3</button>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div id="tab1" role="tabpanel" class="tab-content">
+                        <div class="grid md:grid-cols-2 gap-12 items-start">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">エーデルワイス1</h3>
+                                <p class="mb-6">まるでお家のような家庭的な雰囲気のグループホームです。困ったことがあればいつでもスタッフに相談でき、あなたの「第二の我が家」を目指しています。
+                                </p>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                        <img src="edelwiss1.1.png" alt="エーデルワイス1の清潔で家庭的な居室"
+                                            class="w-full h-full object-cover transition-all duration-300 hover:shadow-xl hover:scale-105">
+                                    </div>
+                                    <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                        <img src="edelwiss1.2.png" alt="エーデルワイス1の明るい共有リビングスペース"
+                                            class="w-full h-full object-cover transition-all duration-300 hover:shadow-xl hover:scale-105">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-green-200">
+                                    <h4 class="text-xl font-bold mb-4 text-center text-green-800">利用料金（月額）</h4>
+                                    <div class="space-y-3 text-gray-700 text-base">
+                                        <div class="flex justify-between items-center pb-2 border-b border-gray-200">
+                                            <span>家賃</span><span class="font-bold">29,000円</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-2 border-b border-gray-200 text-blue-600">
+                                            <span>障害者生活補助金</span><span class="font-bold">-10,000円</span>
+                                        </div>
+                                        <div class="flex justify-between items-center pb-2 border-b border-gray-200">
+                                            <span>光熱水費</span><span class="font-bold">22,000円</span>
+                                        </div>
+                                        <div class="flex justify-between items-center pb-2"><span>食材料費</span><span
+                                                class="font-bold">24,500円</span></div>
+                                    </div>
+                                    <hr class="my-3 border-t-2 border-green-300">
+                                    <div class="flex justify-between items-center text-xl font-bold text-green-700">
+                                        <span>合計</span><span>55,500円</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-3 flex items-center"><i
+                                            class="fas fa-map-marked-alt mr-3 text-green-600"
+                                            aria-hidden="true"></i>アクセス</h4>
+                                    <div class="relative" style="padding-bottom: 56.25%;">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.7371866459816!2d131.5765565746003!3d33.2471879734707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a1a7aa33d8ff%3A0x2cae9ae93d65ad1d!2z44Ko44O844OH44Or44Ov44Kk44K5!5e0!3m2!1sja!2sjp!4v1758795329094!5m2!1sja!2sjp"
+                                            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                                            style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade" title="エーデルワイス1の地図"></iframe>
+                                    </div>
+                                    <p class="mt-2 text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-2"
+                                            aria-hidden="true"></i>住所: 大分市生石１４番地の８</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab2" role="tabpanel" class="tab-content hidden">
+                        <div class="grid md:grid-cols-2 gap-12 items-start">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">エーデルワイス2</h3>
+                                <p class="mb-6">日当たりが良く、静かで落ち着いた環境が魅力です。一人の時間も大切にしながら、仲間との交流も楽しめる、心地よい暮らしの場を提供します。</p>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                        <img src="edelwiss2.1.png" alt="エーデルワイス2の日当たりの良い外観"
+                                            class="w-full h-full object-cover transition-all duration-300 hover:shadow-xl hover:scale-105">
+                                    </div>
+                                    <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                        <img src="edelwiss2.2.jpg" alt="エーデルワイス2のプライベートが保たれた居室"
+                                            class="w-full h-full object-cover transition-all duration-300 hover:shadow-xl hover:scale-105">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-green-200">
+                                    <h4 class="text-xl font-bold mb-4 text-center text-green-800">利用料金（月額）</h4>
+                                    <div class="space-y-3 text-gray-700 text-base">
+                                        <div class="flex justify-between items-center pb-2 border-b border-gray-200">
+                                            <span>家賃</span><span class="font-bold">29,000円</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-2 border-b border-gray-200 text-blue-600">
+                                            <span>障害者生活補助金</span><span class="font-bold">-10,000円</span>
+                                        </div>
+                                        <div class="flex justify-between items-center pb-2 border-b border-gray-200">
+                                            <span>光熱水費</span><span class="font-bold">22,000円</span>
+                                        </div>
+                                        <div class="flex justify-between items-center pb-2"><span>食材料費</span><span
+                                                class="font-bold">24,500円</span></div>
+                                    </div>
+                                    <hr class="my-3 border-t-2 border-green-300">
+                                    <div class="flex justify-between items-center text-xl font-bold text-green-700">
+                                        <span>合計</span><span>55,500円</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-3 flex items-center"><i
+                                            class="fas fa-map-marked-alt mr-3 text-green-600"
+                                            aria-hidden="true"></i>アクセス</h4>
+                                    <div class="relative" style="padding-bottom: 56.25%;">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.0954438877282!2d131.5798881761487!3d33.24456054484773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a1898b209d3f%3A0xab517d67627634ea!2z44Ko44O844OH44Or44Ov44Kk44K5Mg!5e0!3m2!1sja!2sjp!4v1758793979205!5m2!1sja!2sjp"
+                                            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                                            style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade" title="エーデルワイス2の地図"></iframe>
+                                    </div>
+                                    <p class="mt-2 text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-2"
+                                            aria-hidden="true"></i>住所: 大分県大分市生石２３番地の５</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab3" role="tabpanel" class="tab-content hidden">
+                        <div class="grid md:grid-cols-2 gap-12 items-start">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">エーデルワイス3</h3>
+                                <p class="mb-6">車椅子をご利用の方も快適に過ごせるバリアフリー設計です。暮らしやすい設備と温かいサポートで、誰もが安心して暮らせる環境を整えています。</p>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                        <img src="edelwiss3.1.png" alt="エーデルワイス3のバリアフリー対応の浴室"
+                                            class="w-full h-full object-cover transition-all duration-300 hover:shadow-xl hover:scale-105">
+                                    </div>
+                                    <div class="h-48 w-full overflow-hidden rounded-lg shadow-md">
+                                        <img src="edelwiss3.2.png" alt="車椅子でも通りやすいエーデルワイス3の広々とした廊下"
+                                            class="w-full h-full object-cover transition-all duration-300 hover:shadow-xl hover:scale-105">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-8">
+                                <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-green-200">
+                                    <h4 class="text-xl font-bold mb-4 text-center text-green-800">利用料金（月額）</h4>
+                                    <div class="space-y-3 text-gray-700 text-base">
+                                        <div class="flex justify-between items-center pb-2 border-b border-gray-200">
+                                            <span>家賃</span><span class="font-bold">29,000円</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-2 border-b border-gray-200 text-blue-600">
+                                            <span>障害者生活補助金</span><span class="font-bold">-10,000円</span>
+                                        </div>
+                                        <div class="flex justify-between items-center pb-2 border-b border-gray-200">
+                                            <span>光熱水費</span><span class="font-bold">22,000円</span>
+                                        </div>
+                                        <div class="flex justify-between items-center pb-2"><span>食材料費</span><span
+                                                class="font-bold">24,500円</span></div>
+                                    </div>
+                                    <hr class="my-3 border-t-2 border-green-300">
+                                    <div class="flex justify-between items-center text-xl font-bold text-green-700">
+                                        <span>合計</span><span>55,500円</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-3 flex items-center"><i
+                                            class="fas fa-map-marked-alt mr-3 text-green-600"
+                                            aria-hidden="true"></i>アクセス</h4>
+                                    <div class="relative" style="padding-bottom: 56.25%;">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.738889896076!2d131.56933677470101!3d33.24714335981401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a12a56fdbd51%3A0x665cdbd59be5fbe!2z44Ko44O844OH44Or44Ov44Kk44K5Mw!5e0!3m2!1sja!2sjp!4v1758794124680!5m2!1sja!2sjp"
+                                            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                                            style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade" title="エーデルワイス3の地図"></iframe>
+                                    </div>
+                                    <p class="mt-2 text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-2"
+                                            aria-hidden="true"></i>住所: 大分市上白木８組</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="flow" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">ご利用までの流れ</h2>
+                    <p>お問い合わせからご利用開始までの、簡単なステップをご紹介します。</p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-0">
+                    <div class="flex flex-col items-center text-center w-48">
+                        <div
+                            class="w-24 h-24 mb-4 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl">
+                            <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-bold">Step 1</h3>
+                        <p>まずはお問い合わせ</p>
+                    </div>
+                    <div class="w-16 h-1 border-t-4 border-dotted border-green-500 hidden md:block" aria-hidden="true">
+                    </div>
+                    <div class="h-12 w-1 border-l-4 border-dotted border-green-500 md:hidden" aria-hidden="true"></div>
+                    <div class="flex flex-col items-center text-center w-48">
+                        <div
+                            class="w-24 h-24 mb-4 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-bold">Step 2</h3>
+                        <p>見学・ご相談</p>
+                    </div>
+                    <div class="w-16 h-1 border-t-4 border-dotted border-green-500 hidden md:block" aria-hidden="true">
+                    </div>
+                    <div class="h-12 w-1 border-l-4 border-dotted border-green-500 md:hidden" aria-hidden="true"></div>
+                    <div class="flex flex-col items-center text-center w-48">
+                        <div
+                            class="w-24 h-24 mb-4 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl">
+                            <i class="fas fa-shoe-prints" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-bold">Step 3</h3>
+                        <p>体験してみる</p>
+                    </div>
+                    <div class="w-16 h-1 border-t-4 border-dotted border-green-500 hidden md:block" aria-hidden="true">
+                    </div>
+                    <div class="h-12 w-1 border-l-4 border-dotted border-green-500 md:hidden" aria-hidden="true"></div>
+                    <div class="flex flex-col items-center text-center w-48">
+                        <div
+                            class="w-24 h-24 mb-4 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl">
+                            <i class="fas fa-file-signature" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-bold">Step 4</h3>
+                        <p>ご利用開始！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-green-800 mb-4">お問い合わせ</h2>
+                    <p class="max-w-2xl mx-auto">見学のお申し込みやサービスに関するご質問など、どんなことでもお気軽にご連絡ください。スタッフが丁寧にお答えします。</p>
+                </div>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 items-stretch">
+
+                    <div class="bg-white p-5 rounded-lg shadow-lg border border-gray-100">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">お問い合わせフォーム</h3>
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">お名前</label>
+                                <input type="text" id="name" name="entry.953213646" required
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                                    autocomplete="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">メールアドレス</label>
+                                <input type="email" id="email" name="entry.342762829" required
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                                    autocomplete="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">件名</label>
+                                <input type="text" id="subject" name="entry.1081463525" required
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message"
+                                    class="block text-sm font-medium text-gray-700 mb-1">お問い合わせ内容</label>
+                                <textarea id="message" name="entry.806147976" rows="2" required
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                            </div>
+                            <button type="submit" id="submit-button"
+                                class="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-md hover:bg-green-700 transition duration-300 flex items-center justify-center">
+                                <span class="button-text">送信する</span>
+                                <span
+                                    class="button-spinner hidden animate-spin h-5 w-5 border-4 border-white border-t-transparent rounded-full"></span>
+                            </button>
+                        </form>
+                        <p id="form-status" class="mt-4 text-center"></p>
+                    </div>
+
+                    <div class="bg-green-700 text-white p-5 rounded-lg shadow-lg flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">ご連絡先</h3>
+                            <div class="space-y-3">
+                                <div>
+                                    <h4 class="font-semibold text-green-200 mb-2">おひさまファーム / エーデルワイス</h4>
+                                    <a href="tel:097-538-2211"
+                                        class="flex items-center text-lg hover:text-green-100 hover:underline transition-colors">
+                                        <i class="fas fa-phone-alt fa-fw mr-3 text-green-300"
+                                            aria-hidden="true"></i><span
+                                            class="font-bold tracking-wider">097-538-2211</span>
+                                    </a>
+                                    <div class="flex items-center text-lg mt-2">
+                                        <i class="fas fa-fax fa-fw mr-3 text-green-300" aria-hidden="true"></i><span
+                                            class="tracking-wider">097-538-2211</span>
+                                    </div>
+                                    <a href="mailto:oohisama@oct-net.ne.jp"
+                                        class="flex items-center text-lg mt-2 hover:text-green-100 hover:underline transition-colors break-all">
+                                        <i class="fas fa-envelope fa-fw mr-3 text-green-300"
+                                            aria-hidden="true"></i><span
+                                            class="tracking-wider">oohisama@oct-net.ne.jp</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-green-600">
+                            <div class="flex items-center">
+                                <i class="fas fa-clock fa-fw mr-3 text-green-300 text-lg" aria-hidden="true"></i>
+                                <div>
+                                    <h4 class="font-semibold">受付時間</h4>
+                                    <p class="text-green-200">平日 9:00 〜 17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="font-bold text-lg mb-2">特定非営利活動法人イノセント</p>
+            <p class="text-sm">おひさまファーム: 大分市下白木10組</p>
+            <p class="text-sm">エーデルワイス: 大分市生石ほか</p>
+            <p class="mt-4 text-gray-400 text-xs">© 2025 NPO Innocent. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Mobile Menu ---
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = document.querySelectorAll('.mobile-menu-link');
+            const body = document.body;
+
+            const toggleMenu = () => {
+                const isOpen = menuBtn.classList.contains('open');
+                menuBtn.classList.toggle('open');
+                body.classList.toggle('menu-open');
+                menuBtn.setAttribute('aria-expanded', !isOpen);
+
+                if (isOpen) {
+                    mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                    mobileMenu.querySelector('div').classList.add('translate-x-full');
+                } else {
+                    mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                    mobileMenu.querySelector('div').classList.remove('translate-x-full');
+                }
+            };
+
+            menuBtn.addEventListener('click', toggleMenu);
+            menuLinks.forEach(link => {
+                link.addEventListener('click', toggleMenu);
+            });
+            mobileMenu.addEventListener('click', (e) => {
+                if (e.target === mobileMenu) {
+                    toggleMenu();
+                }
+            });
+
+            // --- Tab Switching ---
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.dataset.tab;
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('text-green-600', 'border-green-600', 'font-medium');
+                        btn.setAttribute('aria-selected', 'false');
+                    });
+                    button.classList.add('text-green-600', 'border-green-600', 'font-medium');
+                    button.setAttribute('aria-selected', 'true');
+                    tabContents.forEach(content => {
+                        if (content.id === tabId) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            // --- Scroll Reveal Animation ---
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                revealElements.forEach(el => {
+                    const elementTop = el.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - 100) {
+                        el.classList.add('visible');
+                    }
+                });
+            };
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll();
+
+            // --- Form Submission ---
+            const form = document.getElementById('contact-form');
+            const formStatus = document.getElementById('form-status');
+            const submitButton = document.getElementById('submit-button');
+            const buttonText = submitButton.querySelector('.button-text');
+            const buttonSpinner = submitButton.querySelector('.button-spinner');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSehFbTufUtcQQzYgLxlXuBvVevq51pVRpq8P6JDxyXO2HUioA/formResponse";
+                submitButton.disabled = true;
+                buttonText.classList.add('hidden');
+                buttonSpinner.classList.remove('hidden');
+                formStatus.textContent = '';
+                const formData = new FormData(form);
+
+                try {
+                    await fetch(GOOGLE_FORM_ACTION_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        body: formData,
+                    });
+                    formStatus.textContent = "お問い合わせありがとうございます。メッセージは正常に送信されました。";
+                    formStatus.className = 'mt-4 text-center text-green-700';
+                    form.reset();
+                } catch (error) {
+                    console.error('Error:', error);
+                    formStatus.textContent = "メッセージの送信中にエラーが発生しました。お手数ですが、時間をおいて再度お試しいただくか、お電話にてご連絡ください。";
+                    formStatus.className = 'mt-4 text-center text-red-700';
+                } finally {
+                    submitButton.disabled = false;
+                    buttonText.classList.remove('hidden');
+                    buttonSpinner.classList.add('hidden');
+                }
+            });
+
+            // --- Hero Shape Animation ---
+            const shape = document.getElementById('shape');
+            const shapeContent = document.getElementById('shape-content');
+            const shapeIcon = document.getElementById('shape-icon');
+            const shapeText = document.getElementById('shape-text');
+
+            const states = [
+                {
+                    text: 'おひさまファーム<br>(就労継続支援B型)',
+                    imageUrl: 'oohisama1.png',
+                    shapeClass: 'rounded-2xl',
+                },
+                {
+                    text: 'エーデルワイス<br>（共同生活援助）',
+                    imageUrl: 'edelwiss2.1.png',
+                    shapeClass: 'rounded-2xl',
+                },
+                {
+                    text: 'アットホームな環境で<br>あなたらしい毎日を',
+                    imageUrl: 'oohisama2.png',
+                    shapeClass: 'rounded-2xl',
+                }
+            ];
+
+            let currentStateIndex = 0;
+
+            function updateState() {
+                const currentState = states[currentStateIndex];
+                shape.style.transform = 'scale(0.8)';
+                shape.style.opacity = '0.5';
+
+                setTimeout(() => {
+                    shapeText.innerHTML = currentState.text;
+                    shapeIcon.style.display = 'none';
+                    shapeContent.className = 'absolute top-0 left-0 w-full h-full p-6 flex flex-col items-center justify-center text-center';
+
+                    // 色のオーバーレイを削除し、画像のみに修正
+                    shapeContent.style.backgroundImage = `url('${currentState.imageUrl}')`;
+                    shapeContent.style.backgroundSize = 'cover';
+                    shapeContent.style.backgroundPosition = 'center';
+                    shapeText.style.textShadow = '2px 2px 8px rgba(0, 0, 0, 0.7)';
+                    shapeContent.classList.add('text-white');
+
+                    shape.className = `select-none text-center shadow-2xl transition-all duration-600 ease-in-out ${currentState.shapeClass}`;
+                    shape.style.transform = 'scale(1)';
+                    shape.style.opacity = '1';
+                    currentStateIndex = (currentStateIndex + 1) % states.length;
+                }, 300);
+            }
+
+            updateState();
+            setInterval(updateState, 4000);
+        });
+    </script>
+</body>
+
+</html>
